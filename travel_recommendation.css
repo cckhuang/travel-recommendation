@@ -111,12 +111,18 @@ h2 {
 }
 
 #result{
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 200px;
 }
 
 #result img{
@@ -128,7 +134,7 @@ h2 {
 #intro {
     margin-top: 25px;
     margin-left: 100px;
-    margin-right: 600px;
+    margin-right: 800px;
     color: white;
     font-weight: bold;
 }
