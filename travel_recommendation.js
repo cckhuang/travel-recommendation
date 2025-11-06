@@ -98,6 +98,13 @@ function searchKeyword() {
     }
 }
 
+function clearSearchResults() {
+    const searchInput = document.getElementById('searchInput');
+    const resultDiv = document.getElementById('result');
+    searchInput.value = '';
+    resultDiv.innerHTML = '';
+}
+
 //searchBtn.addEventListener('click', searchKeyword);
 document.addEventListener("DOMContentLoaded", function () {
         const submitContactBtn = document.getElementById('submitContactBtn');
@@ -108,6 +115,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const searchBtn = document.getElementById("searchBtn");
         if (searchBtn) {
             searchBtn.addEventListener("click", searchKeyword);
+        }
+
+        const clearSearchBtn = document.getElementById('clearSearchBtn');
+        if (clearSearchBtn) {
+            clearSearchBtn.addEventListener("click", clearSearchResults)
         }
     });
   
